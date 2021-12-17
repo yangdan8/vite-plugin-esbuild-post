@@ -8,7 +8,7 @@ export default function esbuildPost(options: Options = {}): Plugin {
 
   const optionsNew = {
     target: 'chrome70',
-    include: /\.vue$/,
+    include: /\.(vue|ts)$/,
     loaders: {
       '.vue': 'js',
     },
